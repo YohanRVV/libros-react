@@ -4,12 +4,13 @@ Este proyecto es una aplicación web para gestionar una colección de libros. La
 
 ## Características
 
-- **Consumo de API**: La aplicación consume una API externa para obtener una lista inicial de libros.
-- **Listar libros**: Muestra todos los libros disponibles.
-- **Buscar libros**: Permite a los usuarios buscar libros por título o autor.
-- **Añadir nuevos libros**: Los usuarios pueden añadir nuevos libros al sistema. Estos libros se almacenan en el almacenamiento local del navegador.
-- **Marcar como favoritos**: Los usuarios pueden marcar libros como favoritos para un acceso rápido. Los favoritos también se guardan en el almacenamiento local.
-- **Eliminar libros creados**: Los usuarios pueden eliminar los libros que han añadido.
+- Consumo de la API de libros para obtener una lista de libros con su detalle.
+- Interfaz desarrollada con React y estilizada con Tailwind CSS para una experiencia de usuario moderna y responsiva.
+- Capacidad de buscar libros utilizando un campo de búsqueda dinámico.
+- Los libros creados por el usuario se almacenan en localStorage, permitiendo persistencia de datos entre sesiones.
+- Funcionalidad para marcar libros como favoritos y gestionar una lista de favoritos.
+- Al hacer click en el título de un libro, se navega a una página de detalle donde se muestra más información sobre dicho libro.
+- Los libros creados por el usuario pueden ser eliminados, actualizando el almacenamiento local y la visualización en tiempo real.
 
 ---
 
