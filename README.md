@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Aplicación de Gestión de Libros
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web para gestionar una colección de libros. La aplicación consume datos de una API externa para listar libros y permite a los usuarios añadir, marcar como favoritos, buscar y eliminar libros. Los libros añadidos por los usuarios se almacenan localmente en el navegador, utilizando el almacenamiento local (`localStorage`), para persistir los datos entre sesiones del navegador.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- **Consumo de API**: La aplicación consume una API externa para obtener una lista inicial de libros.
+- **Listar libros**: Muestra todos los libros disponibles.
+- **Buscar libros**: Permite a los usuarios buscar libros por título o autor.
+- **Añadir nuevos libros**: Los usuarios pueden añadir nuevos libros al sistema. Estos libros se almacenan en el almacenamiento local del navegador.
+- **Marcar como favoritos**: Los usuarios pueden marcar libros como favoritos para un acceso rápido. Los favoritos también se guardan en el almacenamiento local.
+- **Eliminar libros creados**: Los usuarios pueden eliminar los libros que han añadido.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Redux Toolkit**: Herramienta para manejar el estado global de la aplicación.
+- **Formik**: Biblioteca para construir formularios en React.
+- **React Table**: Biblioteca para construir y gestionar tablas en React.
+- **React Router**: Biblioteca para el enrutamiento en aplicaciones React.
+- **Tailwind CSS**: Marco de CSS para diseñar rápidamente interfaces de usuario personalizadas.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Instalación
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para poner en marcha el proyecto en tu entorno local, sigue estos pasos:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clona el repositorio
+2. Navega al directorio del proyecto.
+3. Instala las dependencias.
+4. Inicia el servidor de desarrollo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Esto abrirá la aplicación en `http://localhost:3000` en tu navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Uso
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Una vez que la aplicación esté ejecutándose, podrás:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Navegar a la lista de libros desde la barra de navegación.
+- Utilizar el formulario para añadir nuevos libros.
+- Marcar libros como favoritos haciendo clic en el botón correspondiente.
+- Buscar libros utilizando la barra de búsqueda en la lista de libros.

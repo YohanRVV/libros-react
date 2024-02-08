@@ -1,0 +1,28 @@
+import { Provider } from 'react-redux';
+import { store } from '../../store/store';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import BookForm from '../BookForm';
+
+<Meta title="Forms/BookForm" />
+
+# BookForm Component
+
+## Descripción
+
+El componente `BookForm` es un formulario diseñado para permitir a los usuarios agregar nuevos libros a la aplicación. Utiliza la biblioteca Formik para gestionar el estado del formulario y las validaciones, asegurando una experiencia de usuario fluida y efectiva. Para las validaciones de los campos del formulario, se utiliza Yup, una librería que permite definir esquemas de validación de forma sencilla y declarativa.
+
+## Integración con Redux
+
+`BookForm` interactúa con la aplicación a través de Redux, utilizando un slice específico denominado `booksSlice` para gestionar las operaciones relacionadas con los libros. Este slice contiene reducers y acciones para añadir nuevos libros, modificar el estado de los libros favoritos, y más. Al enviar el formulario, `BookForm` despacha una acción de Redux (`addCreatedBook`) para añadir el nuevo libro al estado global gestionado por Redux. Esto permite que el estado de los libros sea consistente y accesible globalmente en la aplicación.
+
+## Store Configuration para Storybook
+
+Para visualizar y trabajar con `BookForm` dentro de Storybook, se configura un store Redux específico utilizando `configureStore` de Redux Toolkit. Este store se pasa al componente `BookForm` a través de un decorador de Storybook que envuelve el componente en un proveedor Redux (`Provider`). Esto simula un entorno de aplicación que permite interactuar con el formulario y observar cómo se gestiona el estado a través de Redux en un entorno aislado.
+
+## Uso en la Aplicación
+
+`BookForm` se utiliza en una página específica para la creación de libros dentro de la aplicación, accesible a través de la navegación principal o enlaces directos. Al completar y enviar el formulario, el libro se agrega a la lista global de libros, y el usuario es redirigido a una página que muestra todos los libros creados o a una vista detallada del nuevo libro, dependiendo de la implementación específica de la aplicación.
+
+La integración con `react-router-dom` permite manejar la navegación y redirecciones, asegurando que el flujo de usuario sea coherente y que los usuarios puedan navegar fácilmente por la aplicación antes y después de agregar un nuevo libro.
+
+En resumen, `BookForm` es un componente clave en la gestión de libros en la aplicación, facilitando la interacción de los usuarios con el estado global y mejorando la experiencia general del usuario al permitir la creación de nuevos libros de manera intuitiva y eficiente.
