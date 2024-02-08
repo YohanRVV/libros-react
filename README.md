@@ -30,9 +30,21 @@ Este proyecto es una aplicación web para gestionar una colección de libros. La
 Para poner en marcha el proyecto en tu entorno local, sigue estos pasos:
 
 1. Clona el repositorio
+    ```bash
+        git clone https://github.com/YohanRVV/libros-react.git
+    ```
 2. Navega al directorio del proyecto.
+    ```bash
+        cd directorio-del-proyecto
+    ```
 3. Instala las dependencias.
+    ```bash
+        npm install
+    ```
 4. Inicia el servidor de desarrollo.
+    ```bash
+        npm start
+    ```
 
 
 Esto abrirá la aplicación en `http://localhost:3000` en tu navegador.
